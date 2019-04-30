@@ -23,8 +23,8 @@ Este boilerplate esta generado con [create-react-app](https://github.com/faceboo
 
 #### Plataforma para contenido
 
-- [Introducción](https://www.acamica.com/cursos/491)
-- [Guías](https://www.acamica.com/cursos/495)`
+- [Introducción](https://www.acamica.com/cursos/491/)
+- [Guías](https://www.acamica.com/cursos/495/)`
 
 #### Plataforma para entregar
 
