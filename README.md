@@ -25,6 +25,9 @@ Este boilerplate esta generado con [create-react-app](https://github.com/faceboo
 
 - [Introducción](https://www.acamica.com/cursos/491/)
 - [Guías](https://www.acamica.com/cursos/495/)`
+  - El punto 1.1 ya esta hecho con este boilerplate
+  - Seguir los puntos desde el 1.2 hasta el 1.8
+  - El punto 1.7 es el siguiente link donde se realiza la entrega
 
 #### Plataforma para entregar
 
