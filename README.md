@@ -1,1 +1,31 @@
-# acamica-boilerplate
+# React Boilerplate
+
+## Introduccioón
+
+Este boilerplate esta generado con [create-react-app](https://github.com/facebook/create-react-app), además de [node-sass](https://github.com/sass/node-sass) para manejar archivos `.scss` para agregar [bulma](https://bulma.io/) y un conjunto de temas llamado [bulmaswatch](https://jenil.github.io/bulmaswatch)
+
+## Como usar el boilerplate?
+
+1. Instalar [Node.js 10.15.3](https://nodejs.org/en)
+
+2) Descargar o clonar este repositorio con `git clone https://github.com/lndgalante/acamica-boilerplate.git`
+
+3. Ir a tu consola y navegar hasta dentro del proyecto `acamica-boilerplate`
+
+4) Una vez instalada todas las dependencias dentro ejecutar `npm install && npm run start`
+
+### Primer Proyecto - Hoteles
+
+#### Componentes
+
+- [Bulma](https://bulma.io/documentation)
+- [Componentes](https://s3.amazonaws.com/resources.acamica.com/contenidos/react/hotels/components.pdf)
+
+#### Plataforma para contenido
+
+- [Introducción](https://www.acamica.com/cursos/491)
+- [Guías](https://www.acamica.com/cursos/495)`
+
+#### Plataforma para entregar
+
+- [Entrega](https://www.acamica.com/clases/10706//entrega)
