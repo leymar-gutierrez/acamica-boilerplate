@@ -59,7 +59,8 @@ class App extends Component {
 
        /* HAGO VALIDACIONES PARA LOS FILTROS */ 
        const hotelsFiltered = hotelsBackup
-       .filter(hotel => dayjs(hotel.availabilityFrom).isAfter(filters.dateFrom)).filter(hotel => dayjs(hotel.availabilityTo).isBefore(filters.dateTo))
+       .filter(hotel => dayjs(hotel.availabilityFrom).isAfter(filters.dateFrom))
+       .filter(hotel => dayjs(hotel.availabilityTo).isBefore(filters.dateTo))
        .filter(hotel => {
          if (filters.country === '' || filters.country === 'Todos los países') return true
          if (filters.country === hotel.country) return true
@@ -90,7 +91,6 @@ class App extends Component {
   render() {
     
     const {filters, hotelsFiltered, message} = this.state
-    console.log(hotelsFiltered)
 
 
     /*const countrys = hotels.map(hotel => hotel.country)
