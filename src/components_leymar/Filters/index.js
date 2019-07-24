@@ -11,7 +11,7 @@ import InputDateFilter from '../InputDateFilter'
   ]
   
   const priceOptions = [
-    { value: undefined, name: 'Cualquier precio' },
+    { value: 0 , name: 'Cualquier precio' },
     { value: 1, name: '$' },
     { value: 2, name: '$$' },
     { value: 3, name: '$$$' },

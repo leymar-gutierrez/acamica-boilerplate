@@ -7,16 +7,15 @@ import 'dayjs/locale/es'
 dayjs.locale('es')
 
 const HotelCard = props => {
-  const {slug, 
-         name, 
-         photo, 
-         description, 
-         availabilityFrom, 
-         availabilityTo, 
-         rooms, 
-         city, 
-         country, 
-         price
+  const { name, 
+          photo, 
+          description, 
+          availabilityFrom, 
+          availabilityTo, 
+          rooms, 
+          city, 
+          country, 
+          price
           } = props
   
 

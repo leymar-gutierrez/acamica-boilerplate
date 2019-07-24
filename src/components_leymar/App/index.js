@@ -26,6 +26,7 @@ class App extends Component {
         hotelsFiltered: [],
         message: 'No se han encontrado hoteles que coincidan con los parámetros de búsqueda.'
       }
+      this.handleChange = this.handleChange.bind(this)
     }
 
 
@@ -49,7 +50,7 @@ class App extends Component {
     FUNCIÓN ANONIMA DONDE TIENES EL VALOR O DATO YA DINAMICO ASEGURANDO QUE 
     EL STATE ESTA SETEADO CORRECTAMENTE */
 
-     handleChange = newFilter => {this.setState({ filters:newFilter }, () => {
+     handleChange = newFilter => { this.setState({ filters: newFilter }, () => {
       this.handleHotelFilter()
      })
     } 
@@ -70,7 +71,7 @@ class App extends Component {
        .filter(hotel => {
          const filterPrice = Number(filters.price)
  
-         if (filterPrice === 0 || filterPrice === 'Cualquier precio') return true
+         if (filterPrice === 0 || filterPrice === undefined) return true
          if (filterPrice === hotel.price) return true
  
          return false
@@ -81,9 +82,10 @@ class App extends Component {
  
          return false
         })
-
  
-     this.setState({ hotelsFiltered })
+     this.setState({ hotelsFiltered }, () => {
+       console.log(hotelsFiltered)
+     })
 
      }
     
@@ -103,6 +105,7 @@ class App extends Component {
           <Hero filters={filters} />
           <Filters filters={filters} onChangeFilter={this.handleChange}/>
           <Hotels data={hotelsFiltered} />
+          
           {
             Object.values(hotelsFiltered).length === 0 &&
             <article className="message is-warning">
